@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Javascript on Steroids</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/default.css">
+
+</head>
+<body>
+    <div class="container-1">
+        <h2>Challenge 1: Your Age in Days</h2>
+    </div>
+
+    <div class="flex-box-container-1">
+        <div>
+            <button class="btn btn-primary" onclick="ageInDays()">Click Me</button>
+        </div>
+
+        <div>
+            <button class="btn btn-danger" onclick="resetText()">Reset</button>
+        </div>
+    </div>
+
+    <div class="flex-box-container-1">
+        <div id="flex-box-result">
+
+        </div>
+    </div>
+
+    <div class="container-2">
+        <h2>Challenge 2: Cat Generator</h2>
+        <button class="btn btn-success" onclick="generateCat()">Generate Cats</button>
+    
+    
+        <div class="flex-box-container-2" id="flex-cat-gen" >
+
+        </div>
+    </div>
+
+    <div class="container-3">
+        <h2>Challenge 3: Rock, Paper, Scissors</h2>
+        <p>Press on the "Play Game" button to start playing.</p>
+
+        <div class="flex-box-rps" id="flex-box-rps-div">
+            <!-- <img id="paper" src="https://pngimage.net/wp-content/uploads/2018/06/paper-cartoon-png-6.png" alt="" height="150" width="150" onclick="rpsGame(this)">
+            <img id="rock" src="https://cdn0.iconfinder.com/data/icons/rock-paper-scissors-emoji/792/rock-paper-scissors-emoji-cartoon-016-512.png" alt="" height="150" width="150" onclick="rpsGame(this)">
+            <img id="scissors" src="https://icon-library.com/images/rock-paper-scissors-icon/rock-paper-scissors-icon-15.jpg" alt="" height="150" width="150" onclick="rpsGame(this)"> -->
+            <button class="btn btn-warning" onclick="playGame()" id="start-button">Play Game</button>
+        </div>
+
+        <div id="rps-button-div">
+            <button class="btn btn-danger" onclick="rpsReset()" id="reset-button">Reset</button>
+        </div>
+
+    </div>
+
+    <div class="container-4">
+        <h2 id="change-my-color">Challenge 4: Change the color of All buttons!</h2>
+
+        <div class="flex-box-pick-color">
+            <form action="">
+                <select name="backdrop" id="background" onchange="buttonColorChange(this)">
+                    <option value="random">Random</option>
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="reset">Reset</option>
+                </select>
+            </form>
+
+            <button class="btn btn-primary">Wee</button>
+            <button class="btn btn-danger">Yahoo</button>
+            <button class="btn btn-warning">Google</button>
+            <button class="btn btn-success">Facbook</button>
+        </div>
+
+    </div>
+
+    <script src="static/JS/script.js"></script>
+</body>
+</html>
